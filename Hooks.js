@@ -10,7 +10,7 @@ const Hooks = ({
         <View>
             <ScrollView>
                 {hooksData.map(hook => {
-                    return <Button title={hook.name}
+                    return <Button key={hook.id} title={hook.name}
                         onPress={() => {
                             navigation.navigate(hook.sceneName);
                         }}
